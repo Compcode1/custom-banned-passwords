@@ -72,7 +72,7 @@ Execute these verification steps immediately after the propagation window:
 ================================================================================
 
 
-================================================================================
+
 LAB COMPLETION SUMMARY: CUSTOM BANNED PASSWORD DICTIONARY ENFORCEMENT
 ================================================================================
 
