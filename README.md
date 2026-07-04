@@ -70,3 +70,30 @@ Execute these verification steps immediately after the propagation window:
 7. Attempt to change the password to a standard unique baseline string.
 8. Confirm the change completes successfully with no directory friction.
 ================================================================================
+
+
+================================================================================
+LAB COMPLETION SUMMARY: CUSTOM BANNED PASSWORD DICTIONARY ENFORCEMENT
+================================================================================
+
+1. VERIFICATION RESULTS
+--------------------------------------------------------------------------------
+* Bravo Engineer (Source): Attempted a credential update to a string containing 
+  the forbidden keyword "ProjectQuantum". The Microsoft Entra Password Protection 
+  (MEPP) engine successfully executed a hard boolean block, rejecting the directory 
+  write operation and returning error code 120018 ("We've seen that password 
+  too many times before"). This confirms the policy trap is active and functional.
+      
+* Alpha Engineer (Source): Attempted a credential update to a unique, highly 
+  complex baseline string completely free of the custom dictionary words. The 
+  MEPP engine parsed the string, validated compliance, and permitted a successful 
+  directory update without friction.
+
+2. ARCHITECTURAL CONCLUSION
+--------------------------------------------------------------------------------
+The deployment successfully verifies that the Microsoft Entra ID (MEID) credential 
+validation gateway can actively parse and reject specific organizational vocabulary 
+terms. By turning on custom list enforcement, the tenant now dynamically blocks 
+predictable corporate passwords during self-service updates, establishing a clear 
+and automated identity-plane defense.
+================================================================================
