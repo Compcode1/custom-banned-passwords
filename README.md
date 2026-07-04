@@ -91,7 +91,7 @@ LAB COMPLETION SUMMARY: CUSTOM BANNED PASSWORD DICTIONARY ENFORCEMENT
 
 2. ARCHITECTURAL CONCLUSION
 --------------------------------------------------------------------------------
-The deployment successfully verifies that the Microsoft Entra ID (MEID) credential 
+* The deployment successfully verifies that the Microsoft Entra ID (MEID) credential 
 validation gateway can actively parse and reject specific organizational vocabulary 
 terms. By turning on custom list enforcement, the tenant now dynamically blocks 
 predictable corporate passwords during self-service updates, establishing a clear 
